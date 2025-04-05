@@ -1,16 +1,16 @@
-## Set Up
+## セットアップ
 
-Install the dependencies.
+依存関係をインストールします。
 
-### Install Dependencies
+### 依存関係のインストール
 ```shell
 pnpm install
 ```
 
-### Replace Placeholders
-Before using, replace any values marked with `example` with the correct ones.
+### プレースホルダーの置き換え
+使用する前に、`example` とマークされている値を正しいものに置き換えてください。
 
-## Usage with Hono
+## Honoでの利用
 
 ```typescript
 app.use(async (c, next) => {
@@ -32,7 +32,7 @@ app.use(async (c, next) => {
 })
 ```
 
-## Usage with React
+## Reactでの利用
 
 ```tsx
 // src/lib/auth.ts
@@ -64,40 +64,40 @@ export const AuthLayout = () => {
 }
 ```
 
-## Commands
+## コマンド
 
 ### better-auth:generate
 
-Dump the DDL for better-auth. 
+better-auth の DDL をダンプします。
 
 ```shell
 pnpm run better-auth:generate
 ```
 
 ### wrangler:migrate:local:list
-Display a list of migrations for the local database.
+ローカルデータベースのマイグレーション一覧を表示します。
 
 ```shell
 pnpm run wrangler:migrate:local:list
 ```
 
 ### wrangler:migrate:local:apply
-Apply migrations to the local database.
+ローカルデータベースにマイグレーションを適用します。
 
 ```shell
 pnpm run wrangler:migrate:local:apply
 ```
 
-### wrangler:migrate:remote:list
-Display a list of migrations for the remote database.
+### wrangler:migrate:production:list
+リモートデータベースのマイグレーション一覧を表示します。
 
 ```shell
-pnpm run wrangler:migrate:remote:list
+pnpm run wrangler:migrate:production:list
 ```
 
-### wrangler:migrate:remote:apply
-Apply migrations to the remote database.
+### wrangler:migrate:production:apply
+リモートデータベースにマイグレーションを適用します。
 
 ```shell
-pnpm run wrangler:migrate:remote:apply
+pnpm run wrangler:migrate:production:apply
 ```

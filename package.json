@@ -7,8 +7,8 @@
 		"better-auth:generate": "pnpm dlx @better-auth/cli@latest generate --output migrations/0000_betterauth_migration.sql --config ./better-auth/auth.ts --y",
 		"wrangler:migrate:local:list": "wrangler d1 migrations list example-database-name --local",
 		"wrangler:migrate:local:apply": "wrangler d1 migrations apply example-database-name --local",
-		"wrangler:migrate:production:list": "wrangler d1 migrations list example-database-name --remote",
-		"wrangler:migrate:production:apply": "wrangler d1 migrations apply example-database-name --remote"
+		"wrangler:migrate:remote:list": "wrangler d1 migrations list example-database-name --remote",
+		"wrangler:migrate:remote:apply": "wrangler d1 migrations apply example-database-name --remote"
 	},
 	"dependencies": {
 		"better-auth": "^1.2.5",
