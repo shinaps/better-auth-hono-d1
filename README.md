@@ -4,8 +4,6 @@
 
 ## Set Up
 
-Install the dependencies.
-
 ### Install Dependencies
 ```shell
 pnpm install
