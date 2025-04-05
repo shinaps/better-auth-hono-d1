@@ -1,3 +1,7 @@
+# better-auth-hono-d1
+
+### 日本語版[こちら](https://github.com/shinaps/better-auth-hono-d1/blob/main/README_JP.md)を参照してください。
+
 ## Set Up
 
 Install the dependencies.
